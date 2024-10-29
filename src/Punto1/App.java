@@ -23,7 +23,26 @@ public class App {
         BinaryTree<Integer> nodo473 = new BinaryTree<>(473, null, nodo744);
         BinaryTree<Integer> nodo812 = new BinaryTree<>(812, nodo473, nodo893);
         BinaryTree<Integer> nodo10 = new BinaryTree<>(10, null, new BinaryTree<Integer>(186));
-        BinaryTree<Integer> nodo459 = new BinaryTree<>(459, nodo10, nodo812);
+        BinaryTree<Integer> nodo459 = new BinaryTree<>(459, nodo10, nodo812); //Nodo raiz
+
+        cantidadNodos(nodo459);
+        cantidadHojas(nodo459);
+        cantidadNodosInternos(nodo459);
 
     }   
+
+    public static void cantidadNodos(BinaryTree<Integer> arbol){
+        System.out.println("Cantidad de nodos del arbol: "+arbol.NodeCount());
+    }
+
+    public static void cantidadHojas(BinaryTree<Integer> arbol){
+        System.out.println("Cantidad de hojas del arbol; "+arbol.LeafCount());
+    }
+
+    public static void cantidadNodosInternos(BinaryTree<Integer> arbol){
+        System.out.println("Cantidad de nodos internos del arbol: "+arbol.InternalCount());
+    }
+
+
+
 }
