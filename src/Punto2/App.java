@@ -16,5 +16,14 @@ public class App {
         BinaryTree<Integer> nodo40 = new BinaryTree<>(40, nodo30, nodo45);
         BinaryTree<Integer> nodo80 = new BinaryTree<>(80, new BinaryTree<Integer>(70), new BinaryTree<Integer>(90));
         BinaryTree<Integer> arbolA = new BinaryTree<>(50, nodo40, nodo80);
+
+        BinaryTree<Integer> nodo206 = new BinaryTree<>(206, new BinaryTree<>(198), null);
+        BinaryTree<Integer> nodo86 = new BinaryTree<>(86, new BinaryTree<>(72), nodo206);
+        BinaryTree<Integer> nodo357 = new BinaryTree<>(357, null, new BinaryTree<>(490));
+        BinaryTree<Integer> nodo513 = new BinaryTree<>(513, nodo357, null);
+        BinaryTree<Integer> nodo546 = new BinaryTree<>(546, nodo513, new BinaryTree<>(864));
+        BinaryTree<Integer> arbolB = new BinaryTree<>(310, nodo86, nodo546);
+
+
     }
 }
