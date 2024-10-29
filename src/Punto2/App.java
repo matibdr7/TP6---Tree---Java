@@ -28,6 +28,7 @@ public class App {
         enOrden(arbolA, arbolB);
         preOrden(arbolA, arbolB);
         postOrder(arbolA, arbolB);
+        descendingOrder(arbolA, arbolB);
 
     }
 
@@ -62,6 +63,15 @@ public class App {
         arbolA.PostOrder();
         System.out.print("\nArbol B: ");
         arbolB.PostOrder();
+        System.out.println("\n");
+    }
+
+    public static void descendingOrder(BinaryTree<Integer> arbolA, BinaryTree<Integer> arbolB){
+        System.out.println("\nRecorrido en orden descendiente: ");
+        System.out.print("Arbol A: ");
+        arbolA.DescendingOrder();
+        System.out.print("\nArbol B: ");
+        arbolB.DescendingOrder();
         System.out.println("\n");
     }
 
