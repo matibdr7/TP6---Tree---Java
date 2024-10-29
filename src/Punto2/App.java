@@ -24,6 +24,14 @@ public class App {
         BinaryTree<Integer> nodo546 = new BinaryTree<>(546, nodo513, new BinaryTree<>(864));
         BinaryTree<Integer> arbolB = new BinaryTree<>(310, nodo86, nodo546);
 
+        parentizada(arbolA, arbolB);
 
     }
+
+    public static void parentizada(BinaryTree<Integer>arbolA, BinaryTree<Integer>arbolB){
+        arbolA.toString();
+        arbolB.toString();
+    }
+
+
 }
