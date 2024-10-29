@@ -25,13 +25,24 @@ public class App {
         BinaryTree<Integer> arbolB = new BinaryTree<>(310, nodo86, nodo546);
 
         parentizada(arbolA, arbolB);
+        enOrden(arbolA, arbolB);
 
     }
 
     public static void parentizada(BinaryTree<Integer>arbolA, BinaryTree<Integer>arbolB){
+        System.out.println("Representacion parentizada: ");
+        System.out.println("Arbol A: "+arbolA+"\nArbol B: "+arbolB.toString());
         arbolA.toString();
         arbolB.toString();
     }
 
+    public static void enOrden(BinaryTree<Integer> arbolA, BinaryTree<Integer> arbolB){
+        System.out.println("\nRecorrido en Orden: ");
+        System.out.print("Arbol A: ");
+        arbolA.InOrder();
+        System.out.print("\nArbol B: ");
+        arbolB.InOrder();
+        System.out.println("\n");
+    }
 
 }
