@@ -26,11 +26,13 @@ public class App {
 
         parentizada(arbolA, arbolB);
         enOrden(arbolA, arbolB);
+        preOrden(arbolA, arbolB);
+        postOrder(arbolA, arbolB);
 
     }
 
     public static void parentizada(BinaryTree<Integer>arbolA, BinaryTree<Integer>arbolB){
-        System.out.println("Representacion parentizada: ");
+        System.out.println("\nRepresentacion parentizada: ");
         System.out.println("Arbol A: "+arbolA+"\nArbol B: "+arbolB.toString());
         arbolA.toString();
         arbolB.toString();
@@ -42,6 +44,24 @@ public class App {
         arbolA.InOrder();
         System.out.print("\nArbol B: ");
         arbolB.InOrder();
+        System.out.println("\n");
+    }
+
+    public static void preOrden(BinaryTree<Integer> arbolA, BinaryTree<Integer> arbolB){
+        System.out.println("\nRecorrido en pre orden: ");
+        System.out.print("Arbol A: ");
+        arbolA.PreOrder();
+        System.out.print("\nArbol B: ");
+        arbolB.PreOrder();
+        System.out.println("\n");
+    }
+
+    public static void postOrder(BinaryTree<Integer> arbolA, BinaryTree<Integer> arbolB){
+        System.out.println("\nRecorrido en post orden: ");
+        System.out.print("Arbol A: ");
+        arbolA.PostOrder();
+        System.out.print("\nArbol B: ");
+        arbolB.PostOrder();
         System.out.println("\n");
     }
 
