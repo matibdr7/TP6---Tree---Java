@@ -11,6 +11,10 @@ package Punto2;
 
 public class App {
     public static void main(String[] args){
-
+        BinaryTree<Integer> nodo30 = new BinaryTree<>(30, new BinaryTree<Integer>(20), new BinaryTree<Integer>(35));
+        BinaryTree<Integer> nodo45 = new BinaryTree<>(45, null, new BinaryTree<Integer>(48));
+        BinaryTree<Integer> nodo40 = new BinaryTree<>(40, nodo30, nodo45);
+        BinaryTree<Integer> nodo80 = new BinaryTree<>(80, new BinaryTree<Integer>(70), new BinaryTree<Integer>(90));
+        BinaryTree<Integer> arbolA = new BinaryTree<>(50, nodo40, nodo80);
     }
 }
