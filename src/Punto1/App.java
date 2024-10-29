@@ -28,6 +28,10 @@ public class App {
         cantidadNodos(nodo459);
         cantidadHojas(nodo459);
         cantidadNodosInternos(nodo459);
+        maximoNivel(nodo459);
+        alturaArbol(nodo459);
+        recorrerOrdenDescendente(nodo459);
+        representaciónParentizada(nodo459);
 
     }   
 
@@ -43,6 +47,21 @@ public class App {
         System.out.println("Cantidad de nodos internos del arbol: "+arbol.InternalCount());
     }
 
+    public static void maximoNivel(BinaryTree<Integer> arbol){
+        System.out.println("El maximo nivel del arbol es: "+arbol.MaxLevel());
+    }
 
+    public static void alturaArbol(BinaryTree<Integer> arbol){
+        System.out.println("La altura del arbol es: "+arbol.Height());
+    }
+    
+    public static void recorrerOrdenDescendente(BinaryTree<Integer> arbol){
+        arbol.DescendingOrder();
+        System.out.println("\n");
+    }
+
+    public static void representaciónParentizada(BinaryTree<Integer> arbol){
+        System.out.println(arbol.toString());
+    }
 
 }
